@@ -1,7 +1,7 @@
 const { expect } = require("chai");
 
 describe("Token contract", function () {
-  let totalSupply = '10000000000000000000000'; // 10000 * 1e18
+  let totalSupply = '1000'; // 10000 * 1e18
   let Token;
   let hardhatToken;
   let owner;

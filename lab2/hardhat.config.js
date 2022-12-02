@@ -1,12 +1,12 @@
 /** @type import('hardhat/config').HardhatUserConfig */
 require("@nomiclabs/hardhat-ethers")
-require("@nomiclabs/hardhat-waffle")
+require("@nomicfoundation/hardhat-chai-matchers")
 require("dotenv").config();
 const { API_URL, PRIVATE_KEY } = process.env;
 module.exports = {
-  defaultNetwork: "sepolia",
+  defaultNetwork: "hardhat",
   networks: {
-    hardhat: {
+    hardhat: { 
     },
     sepolia: {
       url: API_URL,
